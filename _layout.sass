@@ -1,0 +1,33 @@
+*
+    //so the width is not changed if the margin is
+    box-sizing: border-box
+body
+    font-family: $default_font
+    margin: 0
+    height: 100vh
+    //not to have scrollbars
+    overflow: hidden
+
+.hover-left 
+    .left
+        width: $hoverWidth
+    .right
+        width: $otherWidth
+
+.hover-right
+    .right
+        width: $hoverWidth
+    .left
+        width: $otherWidth
+
+@media (max-width: 800px)
+    h1
+        font-size: 2rem
+        top: 30%
+    .btn
+        padding: 1.2rem
+        width: 12rem
+        
+
+
+
